@@ -107,7 +107,7 @@ def handler_search(prefecture):
             "client_cat_main": result["metadata"]["CALS:client_info"].get("main_category", ""), #発注者カテゴリ
             "client_cat_middle": result["metadata"]["CALS:client_info"].get("middle_category", ""), #発注者カテゴリ
             "client_cat_sub": result["metadata"]["CALS:client_info"].get("sub_category", ""), #発注者カテゴリ
-            "contractor_name": result["metadata"]["CALS:contractor_info"].get("name", ""), #施工者名
+            "contractor_name": result["metadata"]["CALS:name"].get("name", ""), #施工者名
             "construction_type": result["metadata"]["CALS:construction_name_etc"].get("construction_type", ""), #工事種別
             "construction_name": result["metadata"]["CALS:construction_name_etc"].get("construction_name", ""), #工事名称
             "construction_field": result["metadata"]["CALS:construction_name_etc"].get("construction_field", ""), #工事分野
